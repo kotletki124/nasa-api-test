@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.submitting {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    width: 279px;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .header {
+    min-width: 300px;
+    max-width: 402px;
+    height: 104px;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  width: 400px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info dt {
+  flex-shrink: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info dd {
+  flex-shrink: 0;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+.info dt:after {
+  content: " ..................................................................................";
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 280px;
+  }
+}

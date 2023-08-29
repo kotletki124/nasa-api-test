@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img {
+  height: 30px;
+  width: 30px;
+  background-image: url("/pngegg 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.size {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.orderBtn {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: var(--orange-base);
+  padding: 2px 11px 2px 11px;
+  border-radius: 16px;
+  background-color: var(--orange-smooth);
+  user-select: none;
+}
+
+.orderBtn:hover {
+  background-color: var(--orange-base);
+  color: var(--white-base);
+  cursor: pointer;
+}
+
+.orderBtn:disabled {
+  cursor: auto;
+  pointer-events: none;
+  color: var(--red-smooth);
+}
+
+.danger {
+  font-size: 14px;
+  line-height: 20px;
+}

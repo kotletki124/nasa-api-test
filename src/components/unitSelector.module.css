@@ -1,0 +1,12 @@
+.container {
+  height: 24px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.inactive {
+  font-weight: 400;
+  letter-spacing: 0.65px;
+  text-decoration: underline;
+  cursor: pointer;
+}

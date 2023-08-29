@@ -1,0 +1,48 @@
+.container {
+  position: sticky;
+  display: flex;
+  padding: 16px;
+  border-radius: 24px;
+  justify-content: space-between;
+  background-color: #232526;
+}
+
+.sendBtn {
+  display: flex;
+  align-items: center;
+  width: 118px;
+  height: 48px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 40px;
+  gap: 4px;
+  background-color: var(--orange-base);
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sendBtn:disabled {
+  pointer-events: none;
+  cursor: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    position: fixed;
+    flex-direction: row;
+    height: 81px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .container {
+    flex-direction: column;
+    width: 150px;
+    height: 161px;
+    top: 132px;
+  }
+}
