@@ -14,6 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
     "plugins": [
       {
         "name": "next"
@@ -23,6 +26,22 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/util.js",
+    "src/server/APIHelper.js",
+    "src/components/UnitSelectorComponent.jsx",
+    "src/components/ShopComponent.jsx",
+    "src/components/ObjectInfoComponent.jsx",
+    "src/components/ListComponent.jsx",
+    "src/components/FeedItemComponent.jsx",
+    "src/components/CloseApproachItemComponent.jsx",
+    "src/components/CartComponent.jsx",
+    "src/app/object/[id]/page.jsx",
+    "src/app/checkout/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }
