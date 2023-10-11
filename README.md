@@ -1,3 +1,5 @@
+https://nasa-api-test.onrender.com/
+
 Нужно сверстать онлайн-сервис по мониторингу и уничтожению опасных астероидов на основе данных API NASA. 
 
 АПИ: https://api.nasa.gov Asteroids - NeoWs
