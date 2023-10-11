@@ -148,7 +148,7 @@ async function fetchLookup(id) {
   return responseData;
 }
 
-export const prepareFeedCache = async (
+const prepareFeedCache = async (
   ind,
   todayDate = today(),
   forceClearCache = false

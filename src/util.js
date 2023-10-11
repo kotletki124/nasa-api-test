@@ -3,6 +3,7 @@ import React from "react";
 export function useDebounceWithThrottle(func, delay = 300, depsArr = []) {
   const throttledFunc = React.useMemo(
     () => debounceWithThrottle(func, delay),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [func, delay, ...depsArr]
   );
   return throttledFunc;

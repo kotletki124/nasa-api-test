@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Passion_One } from "next/font/google";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 const passionOne = Passion_One({ subsets: ["latin-ext"], weight: "400" });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <header className={styles.header}>
-          <h1 className={passionOne.className}>ARMAGEDDON 2023</h1>
+          <Link href="/">
+            <h1 className={passionOne.className}>ARMAGEDDON 2023</h1>
+          </Link>
           <p>
             ООО “Команда им. Б. Уиллиса”.
             <br />

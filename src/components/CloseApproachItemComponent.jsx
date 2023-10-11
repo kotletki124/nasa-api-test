@@ -16,7 +16,7 @@ export default function CloseApproachItem({ data }) {
     <div className={styles.container}>
       <div className={styles.row}>
         <h2>{data.date}</h2>
-        <span>{data.time || "3:14"}</span>
+        <span>{data.time}</span>
       </div>
       <div className={styles.row}>
         <div>{data.distance} км</div>
